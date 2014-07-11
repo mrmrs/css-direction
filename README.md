@@ -22,17 +22,17 @@ or download the css on github and include in your project.
 .ltr { direction: ltr; }
 .rtl { direction: rtl; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .ltr-ns { direction: ltr; }
   .rtl-ns { direction: rtl; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .ltr-m { direction: ltr; }
   .rtl-m { direction: rtl; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .ltr-l { direction: ltr; }
   .rtl-l { direction: rtl; }
 }
