@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-direction)
 ## File Size
 
 391B direction.css
-300B direction.min.css
+300B direction.min.css 
+133B minified and gzipped
 
 ## The Code
 ```
