@@ -20,7 +20,7 @@ View on [npm](https://www.npmjs.org/package/css-direction)
 ## File Size
 
 391B direction.css
-300B direction.min.css 
+300B direction.min.css
 133B minified and gzipped
 
 ## The Code
@@ -54,7 +54,7 @@ View on [npm](https://www.npmjs.org/package/css-direction)
 
 The MIT License (MIT)
 
-Copyright (c) 2014 @mrmrs
+Copyright (c) 2015 @mrmrs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
