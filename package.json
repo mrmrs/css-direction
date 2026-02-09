@@ -1,38 +1,44 @@
 {
   "name": "css-direction",
-  "style": "direction.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-direction",
-  "description": "Css module of single purpose classes for direction",
+  "version": "2.0.0",
+  "description": "Functional CSS for direction",
+  "style": "dist/direction.css",
+  "main": "dist/direction.css",
+  "exports": {
+    ".": "./dist/direction.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "direction"
+    "direction",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-direction": {
+  "homepage": "https://github.com/mrmrs/css-direction",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-direction.git"
+    "url": "https://github.com/mrmrs/css-direction.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-direction/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-direction/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
