@@ -5,17 +5,17 @@
 .ltr { direction: ltr; }
 .rtl { direction: rtl; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .ltr-s { direction: ltr; }
   .rtl-s { direction: rtl; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .ltr-m { direction: ltr; }
   .rtl-m { direction: rtl; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .ltr-l { direction: ltr; }
   .rtl-l { direction: rtl; }
 }
