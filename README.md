@@ -1,112 +1,76 @@
-# css-direction 1.0.6
+# css-direction
 
-Css module of single purpose classes for direction
+Functional CSS for direction
 
-#### Stats
+## Filesize
 
-157 | 8 | 8
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/direction.css` | 385 bytes |
+| `dist/direction.min.css` | 263 bytes (117 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-direction
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-direction
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-direction.git
+```sh
+npm install css-direction
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-direction";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-direction@1.0.6/css/css-direction.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-direction">
+<link rel="stylesheet" href="https://unpkg.com/css-direction/dist/direction.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   DIRECTION
-*/
-.ltr { direction: ltr; }
-.rtl { direction: rtl; }
-@media screen and (min-width: 48em) {
- .ltr-ns { direction: ltr; }
- .rtl-ns { direction: rtl; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .ltr-m { direction: ltr; }
- .rtl-m { direction: rtl; }
-}
-@media screen and (min-width: 64em) {
- .ltr-l { direction: ltr; }
- .rtl-l { direction: rtl; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-direction/dist/direction.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.ltr` | `direction: ltr;` |
+| `.rtl` | `direction: rtl;` |
+| `.ltr-s` | `direction: ltr;` |
+| `.rtl-s` | `direction: rtl;` |
+| `.ltr-m` | `direction: ltr;` |
+| `.rtl-m` | `direction: rtl;` |
+| `.ltr-l` | `direction: ltr;` |
+| `.rtl-l` | `direction: rtl;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.ltr-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/direction.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/direction.css` — formatted
+- `dist/direction.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
